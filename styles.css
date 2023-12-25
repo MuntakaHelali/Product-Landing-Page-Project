@@ -25,17 +25,22 @@ nav{
     display: flex;
     justify-content: right;
     align-items: center;
-    gap: 12rem;
+    gap: 10rem;
     margin-right: 8%;
 }
 
 body {
-    background-color: #eee;
+    background-color: white;
     font-family: 'Lato', sans-serif;
   }
 
+h2{
+    font-weight: 600;
+}
+
 form{
-    margin-top: 10%;
+    margin-top: 5rem;
+    text-align: center;
 }
 
 nav > a{
@@ -44,13 +49,34 @@ nav > a{
     cursor: pointer;
 }
 
+#email{
+    margin-top: 1rem;
+    width: 250px;
+    height: 30px;
+    padding: 0.4rem;
+}
+
 #submit{
     display: block;
-    margin-top: 1.5%;
-  }
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(183, 159, 61);
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem;
+    transition: background-color 1s;
+}
 
-  @media (max-width: 500px) and (min-width: 0px){
+#submit:hover{
+    background-color: orange;
+}
+
+
+
+@media (max-width: 500px) and (min-width: 0px){
     nav{
         flex-direction: column;
     }
-  }
+}
