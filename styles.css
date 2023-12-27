@@ -70,10 +70,51 @@ nav > a{
 }
 
 #submit:hover{
-    background-color: orange;
+    background-color: darkorange;
 }
 
+#features{
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
 
+#features .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: rgb(182, 127, 61);
+}
+
+#features .features-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#features .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+#how_it_works{
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: center;
+}
+
+#how_it_works > iframe{
+    max-width: 560px;
+    width: 100%;
+}
 
 @media (max-width: 500px) and (min-width: 0px){
     nav{
