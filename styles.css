@@ -12,6 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 header > img{
@@ -23,7 +24,7 @@ header > img{
 
 nav{
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     align-items: center;
     gap: 10rem;
     margin-right: 8%;
@@ -67,6 +68,7 @@ nav > a{
     border: none;
     padding: 0.5rem;
     transition: background-color 1s;
+    cursor: pointer;
 }
 
 #submit:hover{
@@ -114,6 +116,92 @@ nav > a{
 #how_it_works > iframe{
     max-width: 560px;
     width: 100%;
+}
+
+#pricing{
+    display: flex;
+    margin-top: 4rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100%/3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.card-title{
+    font-weight: 700;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgb(196, 193, 188);
+}
+
+#pricing h2{
+    margin-top: 15px;
+}
+
+ol{
+    padding: 15px 0;
+}
+
+li{
+    padding-top: 5px;
+    list-style: none;
+}
+
+.card-btn{
+    border: none;
+    background-color: rgb(183, 159, 61);
+    margin: 15px 0;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.card-btn:hover{
+    background-color: rgb(182, 127, 61);
+}
+
+footer{
+    max-width: 1000px;
+    background-color: rgb(196, 193, 188);
+    margin-top: 30px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(24, 26, 27);
+}
+
+span{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    margin-right: 1rem;
 }
 
 @media (max-width: 500px) and (min-width: 0px){
